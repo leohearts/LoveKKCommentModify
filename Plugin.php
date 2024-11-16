@@ -653,7 +653,7 @@ class LoveKKCommentModify_Plugin implements Typecho_Plugin_Interface
                         trim($comment->ip),
                         trim($comment->mail),
                         $status[$comment->status],
-                        trim($options->adminUrl.'/manage-comments.php')
+                        trim($options->adminUrl.'manage-comments.php')
                     ), $html
                 );
             }
