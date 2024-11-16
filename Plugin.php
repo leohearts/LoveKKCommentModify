@@ -104,7 +104,7 @@ class LoveKKCommentModify_Plugin implements Typecho_Plugin_Interface
             <span id="j-version" style="display: none;">1.1.6</span>
             <div class="j-setting-notice">请求数据中...</div>
             <script src="<?php echo Helper::options()->rootUrl ?>/usr/plugins/LoveKKCommentModify/assets/js/joe.setting.min.js"></script>
-        <?
+        <?php
 
         // 公共区域
         $public_section = new Typecho_Widget_Helper_Layout('div', array('class=' => 'typecho-page-title'));
@@ -1206,7 +1206,7 @@ class LoveKKCommentModify_Plugin implements Typecho_Plugin_Interface
                     </p>
                     <p class="description">审核失败需要手动填写信息并点击发送邮件，审核成功则只需要修改高级选项公开度为公开，保存，会自动发邮件。</p>
                 </section>
-                <?
+                <?php
             }
 
         }
