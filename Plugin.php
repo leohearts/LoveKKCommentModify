@@ -407,6 +407,7 @@ class LoveKKCommentModify_Plugin implements Typecho_Plugin_Interface
         }else{
             $coid = $comment->coid;
         }
+        if ((is_array($comment) && $comment['status'] == 'spam') || (!is_array($comment) && $comment->status == 'spam')) return;
         // 检测当前版本是否大于1.1/17.10.30
         if (Typecho_Common::VERSION == '1.2.0'){
             self::sendMail($coid);
